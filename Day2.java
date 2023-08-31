@@ -16,15 +16,20 @@ public class Day2 {
     public static void main(String args[]) {
         
         // Initialize
+        byte myByte = 12;
+        short myShort = 16;
         int myint = 19;
         char myChar = 'L';
         double myDouble = 18.56;
         float myFloat = 2.02f;
-        
+        boolean myBool = true;
         // Print
+        System.out.println("Integer: " + myByte);
+        System.out.println("Integer: " + myShort);
         System.out.println("Integer: " + myint);
         System.out.println("Character: " + myChar);
         System.out.println("Double: " + myDouble);
         System.out.println("Float: " + myFloat);
+        System.out.println("Boolean: " + myBool);
     }
 }
