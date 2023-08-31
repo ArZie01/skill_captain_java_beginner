@@ -17,6 +17,7 @@ public class Day2 {
         
         // Initialize
         byte myByte = 12;
+        long myLong = 157;
         short myShort = 16;
         int myint = 19;
         char myChar = 'L';
@@ -24,8 +25,9 @@ public class Day2 {
         float myFloat = 2.02f;
         boolean myBool = true;
         // Print
-        System.out.println("Integer: " + myByte);
-        System.out.println("Integer: " + myShort);
+        System.out.println("Byte: " + myByte);
+        System.out.println("Long: " + myLong);
+        System.out.println("Short: " + myShort);
         System.out.println("Integer: " + myint);
         System.out.println("Character: " + myChar);
         System.out.println("Double: " + myDouble);
