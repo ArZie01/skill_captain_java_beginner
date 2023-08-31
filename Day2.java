@@ -24,6 +24,7 @@ public class Day2 {
         double myDouble = 18.56;
         float myFloat = 2.02f;
         boolean myBool = true;
+        String myString = "Hello World!";
         // Print
         System.out.println("Byte: " + myByte);
         System.out.println("Long: " + myLong);
@@ -33,5 +34,6 @@ public class Day2 {
         System.out.println("Double: " + myDouble);
         System.out.println("Float: " + myFloat);
         System.out.println("Boolean: " + myBool);
+        System.out.println("String: " + myString);
     }
 }
