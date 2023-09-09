@@ -15,38 +15,42 @@ public class Day5 {
         Scanner scanner = new Scanner(System.in);
         
         System.out.print("Enter first number: ");
-        float value1 = scanner.nextInt();
-        
+        float value1 = scanner.nextFloat();
+
         System.out.print("Enter second number: ");
-        float value2 = scanner.nextInt();
+        float value2 = scanner.nextFloat();
+
+        System.out.print("Enter operation (+, -, *, /): ");
+        char operation = scanner.next().charAt(0);
         
-        System.out.print("Enter operation (+,-,*,/): ");
-        String operation = scanner.nextLine();
+        float finalvalue = 0;
         
         switch(operation){
-            case "+":
-                float finalvalue = value1 + value2;
-                System.out.println("Output:");
-                System.out.println(value1 + " + " + value2 + " = " + finalvalue);
-                break;
-                
-            case "-":
+            case '+':
                 finalvalue = value1 + value2;
-                System.out.println("Output:");
-                System.out.println(value1 + " - " + value2 + " = " + finalvalue);
                 break;
                 
-            case "*":
+            case '-':
+                finalvalue = value1 - value2;
+                break;
+                
+            case '*':
                 finalvalue = value1 * value2;
-                System.out.println("Output:");
-                System.out.println(value1 + " * " + value2 + " = " + finalvalue);
                 break;
                 
-            case "/":
-                finalvalue = value1 / value2;
-                System.out.println("Output:");
-                System.out.println(value1 + " - " + value2 + " = " + finalvalue);
+            case '/':
+                if(value2==0){
+                    System.out.println("Undefined");
+                }else{
+                    finalvalue = value1 / value2;
+                }
                 break;
+                
+            default:
+                System.out.println("Invalid operator");
+                return;
         }
+        System.out.println("Output:");
+        System.out.println(value1 +" " + operation + " " + value2 + " = " + finalvalue);
     }
 }
